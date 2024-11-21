@@ -28,7 +28,7 @@ if submit:
     jobDes = get_jobDescription(input)
     prompt = f"Give me the Job title, description and key skils by reading the following text from a job posting {jobDes}"
     job = get_gemini_response(prompt)
-    prompt = f"You are a software Engineer named Varun having 4 plus years of expirience in software development. You have seen the followinf job description {job}. Create a cold email to send to the recruiter"
+    prompt = f"You are a software Engineer named Varun having 4 plus years of expirience in software development. You have seen the following job description {job}. Create a cold email to send to the recruiter"
     email = get_gemini_response(prompt)
     sApp.subheader("Here is a cold email for the given Job:")
     sApp.write(email)
